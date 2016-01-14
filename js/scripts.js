@@ -6,10 +6,8 @@ $(function() {
     var age = $("input#age").val();
     var fame = $('input[name="fame"]:checked', '#questions').val();;
     var hair = $("select#q5").val();
-    $('.betty').hide();
-    $('.leo').hide();
-    $('.sandler').hide();
-    $('.scarlett').hide();
+    //simular style can be done here as well.
+    $('.betty, .leo, .sandler, .scarlett ').hide();
     $('.kesha').hide();
     $('.cranston').hide();
     $('.lucy').hide();
