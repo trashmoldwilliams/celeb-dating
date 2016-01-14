@@ -9,36 +9,110 @@
     <title>Celebrity Dating Page!</title>
   </head>
   <body>
-    <h1>Which Celebrity would be a Good Match for YOU?!</h1>
-    <p>With our state of the art, extensive questionarre, we'll match you up with the celebrity that's right for you! Then all you have to do is find out where they live and contact them yourself!</p>
-    <form id="questions">
-      <label for="q1">Question 1: Are you a male of a female?</label>
-      <select id="q1">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-      <label for="q2">Question 2: Do you appreciate someone with good taste or no taste?</label>
-      <select id="q2">
-        <option value="good">Good Taste</option>
-        <option value="none">No Taste</option>
-      </select>
-      <button type='submit' class='btn btn-default'>Submit</button>
-    </form>
-    <div id="output">
-      <img src="img/leo.jpg" class="leo">
-      <p class='leo'>Leonardo DiCapprio would be a perfect match for you!</p>
-      <img src="img/sandler.jpg" class="sandler">
-      <p class='sandler'>Adam Sandler would be a perfect match for you!</p>
-      <img src="img/scarlett.jpg" class="scarlett">
-      <p class='scarlett'>Scarlett Johansen would be a perfect match for you!</p>
-      <img src="img/kesha.jpg" class="kesha">
-      <p class='kesha'>Ke$ha would be a perfect match for you! May God have mercy on your soul.</p>
+    <div class="container">
+      <h1>Which Celebrity would be a Good Match for YOU?!</h1>
+      <p>With our state of the art, extensive questionarre, we'll match you up with the celebrity that's right for you! Then all you have to do is find out where they live and contact them yourself!</p>
+      <form id="questions">
+        <div class="row">
+          <label for="q1">Question 1: Are you a male of a female?</label>
+          <select id="q1">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="q2">Question 2: Do you appreciate someone with good taste or no taste?</label>
+          <select id="q2">
+            <option value="good">Good Taste</option>
+            <option value="none">No Taste</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="q3">Question 3: How old are you?</label>
+          <input id="age" type="text">
+        </div>
+        <div class="row">
+          <label for="q4">Question 4: How much do you value how famous your partner is?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fame" id="optionsRadios1" value="lots" checked>It means EVERYTHING to me!!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fame" id="optionsRadios2" value="mod">
+            </label>I think it's neat
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fame" id="optionsRadios3" value="not">Couldn't care less
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <label for="q5">Question 5: What is your favorite hair color?</label>
+          <select id="q5">
+            <option value="blonde">Blonde</option>
+            <option value="brown">Brown</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+          </select>
+        </div>
+        <button type='submit' class='btn btn-default'>Submit</button>
+      </form>
+      <div id="output">
+        <img src="https://pbs.twimg.com/profile_images/1125351141/BettyWhite1.jpg" class='betty'>
+        <p class='betty'>Betty White would be a perfect match for you!</p>
+        <img src="http://cdn.wegotthiscovered.com/wp-content/uploads/bryan-cranston-lex-luthor.jpg" class='cranston'>
+        <p class='cranston'>Brian Cranston would be a perfect match for you!</p>
+        <img src="http://media.tumblr.com/2d2feff65a56e9405596e5ad1cdee63a/tumblr_inline_mn4q08VrFg1qz4rgp.png" class='gwenyth'>
+        <p class='gwenyth'>Gwenyth Paltrow would be a perfect match for you!</p>
+        <img src="https://pmcdeadline2.files.wordpress.com/2014/10/lucy-liu.jpg?w=970" class='lucy'>
+        <p class='lucy'>Lucy Liu would be a perfect match for you!</p>
+        <img src="http://ia.media-imdb.com/images/M/MV5BMTQ3ODE3Mjg1NV5BMl5BanBnXkFtZTcwNzA4ODcxNA@@._V1_UY317_CR11,0,214,317_AL_.jpg" class='portman'>
+        <p class='portman'>Natalie Portman would be a perfect match for you!</p>
+        <img src="http://www.hawtcelebs.com/wp-content/uploads/2014/03/jayma-mays-at-glee-100th-episode-celebration-in-los-angeles_1.jpg" class='jayma'>
+        <p class='jayma'>Jayma Mays would be a perfect match for you!</p>
+        <img src="http://www.womenshealthmag.com/sites/womenshealthmag.com/files/images/jordin-sparks-weightloss.jpg" class='sparks'>
+        <p class='sparks'>Jordin Sparks would be a perfect match for you!</p>
+        <img src="http://www.eonline.com/eol_images/Entire_Site/2014113/rs_1024x759-140213113703-1024-Katy-Perry-JR-21314.jpg" class='katy'>
+        <p class='katy'>Katy Perry would be a perfect match for you!</p>
+        <img src="http://img2.timeinc.net/people/i/2008/database/kristenstewart/kristen_stewart300.jpg" class='kristen'>
+        <p class='kristen'>Kristen Stewart would be a perfect match for you!</p>
+        <img src="http://img2.timeinc.net/people/i/2006/celebdatabase/lindsaylohan/lindsay_lohan1ALT_300_400.jpg" class='lohan'>
+        <p class='lohan'>Lindsay Lohan would be a perfect match for you!</p>
+        <img src="http://img2.timeinc.net/people/i/2014/database/140831/kim-kardashian-300.jpg" class='kim'>
+        <p class='kim'>Kim Kardashian would be a perfect match for you!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Paris_Hilton_3_Crop.jpg" class='paris'>
+        <p class='paris'>Paris Hilton would be a perfect match for you!</p>
+        <img src="http://content.hollywire.com/sites/default/files/2015/08/19/badass-digest.jpg" class='joseph'>
+        <p class='joseph'>Joseph Gordon-Levitt would be a perfect match for you!</p>
+        <img src="http://images4.static-bluray.com/reviews/416_5.jpg" class='daniel'>
+        <p class='daniel'>Daniel Day Lewis would be a perfect match for you!</p>
+        <img src="data:image/jpeg;base64,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" class='conan'>
+        <p class='conan'>Conan O'Brien would be a perfect match for you!</p>
+        <img src="http://cdn.images.express.co.uk/img/dynamic/79/590x/sylvester-stallone-450281.jpg" class='stallone'>
+        <p class='stallone'>Sylvester Stallone would be a perfect match for you!</p>
+        <img src="http://www.facts.be/assets/ray1.gif" class='park'>
+        <p class='park'>Ray Park would be a perfect match for you!</p>
+        <img src="data:image/jpeg;base64,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" class='spade'>
+        <p class='spade'>David Spade would be a perfect match for you!</p>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8OyPhAisCMpcXD5xSGsjCJj_ESywO62n1gQRM1PtZz5ghtpZL4w" class='tyler'>
+        <p class='tyler'>Tyler Perry would be a perfect match for you!</p>
+        <img src="http://www.sospaced.com/wp-content/uploads/2014/06/carrot-top-funny-pics.jpg" class='carrot'>
+        <p class='carrot'>Carrot Top would be a perfect match for you!</p>
+        <img src="img/leo.jpg" class='leo'>
+        <p class='leo'>Leonardo DiCapprio would be a perfect match for you!</p>
+        <img src="img/sandler.jpg" class="sandler">
+        <p class='sandler'>Adam Sandler would be a perfect match for you!</p>
+        <img src="img/scarlett.jpg" class="scarlett">
+        <p class='scarlett'>Scarlett Johansen would be a perfect match for you!</p>
+        <img src="img/kesha.jpg" class="kesha">
+        <p class='kesha'>Ke$ha would be a perfect match for you! May God have mercy on your soul.</p>
+        <img src="http://i891.photobucket.com/albums/ac118/ROBsessedBlog2/Kat/Thankful/Robert-Pattinson-17.jpg" class="robert">
+        <p class='robert'>Robert Pattinson would be a perfect match for you!</p>
+        <p class="nope">Can't do nothin for ya son</p>
+      </div>
     </div>
-
-
-
-
-
-
   </body>
 </html>
